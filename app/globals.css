@@ -1,0 +1,211 @@
+/* ---------- Basics ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #222222;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0 0 10px;
+}
+
+h2 {
+  margin: 0 0 12px;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+/* ---------- Navigation bar ---------- */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background-color: #1e3a5f;
+}
+
+.logo {
+  margin-right: auto;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #dbe7f5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ---------- Page layout ---------- */
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  margin-right: 8px;
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button.secondary {
+  background-color: #6b7280;
+}
+
+button.secondary:hover {
+  background-color: #4b5563;
+}
+
+button.danger {
+  background-color: #dc2626;
+}
+
+button.danger:hover {
+  background-color: #b91c1c;
+}
+
+/* ---------- Form fields ---------- */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #b0b7c3;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* Input and button side by side (to-do form) */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.row input[type='text'] {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.row button {
+  margin-right: 0;
+}
+
+/* ---------- Counter ---------- */
+.count {
+  color: #1e3a5f;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* ---------- To-do list ---------- */
+.todo-list {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.todo-item label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.todo-item input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.todo-item button {
+  margin-right: 0;
+}
+
+.done {
+  color: #888888;
+  text-decoration: line-through;
+}
+
+/* ---------- Messages ---------- */
+.info {
+  margin-top: 12px;
+  color: #555555;
+}
+
+.success {
+  margin-top: 12px;
+  color: #15803d;
+  font-weight: bold;
+}
+
+.error {
+  margin-top: 12px;
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+/* ---------- Keyboard focus ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
